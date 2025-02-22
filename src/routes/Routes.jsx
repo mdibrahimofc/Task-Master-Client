@@ -5,6 +5,7 @@ import SignUp from '../pages/SignUp/SignUp'
 import PrivateRoute from './PrivateRoute'
 import MainLayout from '@/layouts/MainLayout'
 import Home from '@/pages/Home/Home'
+import AddTask from '@/pages/AddTask/AddTask'
 
 
 export const router = createBrowserRouter([
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>,
+      },
+      {
+        path: 'add-task',
+        element: <AddTask/>,
       },
     ],
   },
